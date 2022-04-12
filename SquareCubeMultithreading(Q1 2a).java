@@ -10,10 +10,10 @@ class NewThread implements Runnable{
     Thread t;
     int num;
     
-    NewThread(String tname, int n){
+    NewThread(String tname, int n){                 
         
         name = tname;
-        num = n;
+        num = n;                                        
         t = new Thread(this, name);
         System.out.println("New Thread: " + t);
         
@@ -21,7 +21,7 @@ class NewThread implements Runnable{
         
     }
     
-    public void square(){
+    public void square(){                   // Calculating square of number
         
         int sq = 0;
         sq = num*num;
@@ -29,7 +29,7 @@ class NewThread implements Runnable{
         System.out.println("Square of the " + num + " is: " + sq);
     }
     
-    public void cube(){
+    public void cube(){                 // Calculating cube of number
         
         int cub = 0;
         cub = num*num*num;
@@ -56,7 +56,7 @@ public class Main {
     {
        new NewThread("One", 2);
        new NewThread("Two", 3);
-    //   new NewThread("Two");
+    
        
        try{
             System.out.println("Main Thread Starting");
