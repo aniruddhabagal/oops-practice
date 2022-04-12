@@ -1,3 +1,8 @@
+/*
+Qpaper1 3b:  Analyze the below code and complete the program to find the sum and average of “ even  and odd elements between 20 and 30” by using a for-each loop to the collection.
+*/
+
+
 import java.util.*;
 
 class Main
