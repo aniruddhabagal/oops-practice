@@ -5,20 +5,20 @@ class Main
     public static void main(String[] args)
     {
 
-    ArrayList<Integer> al = new ArrayList<Integer>();
+    ArrayList<Integer> al = new ArrayList<Integer>();  // creating array list
 
 
     for (int i = 20; i <= 30; i++)
     {
-        al.add(i);
+        al.add(i);  // adding numbers to arraylist
 	}
 	
-    Integer ia[] = new Integer[al.size()];
-    ia = al.toArray(ia);
+    Integer ia[] = new Integer[al.size()];   // creating array
+    ia = al.toArray(ia);                     // Getting Array from an ArrayList
     
     int even = 0, odd = 0, oddCount = 0, evenCount = 0;
  
-    for (int i : ia) {
+    for (int i : ia) {                       // Using for-each loop
         if (i % 2 == 0)
         {
             even += i;
